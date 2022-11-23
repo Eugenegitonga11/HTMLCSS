@@ -1,0 +1,42 @@
+h4{
+    background-color: blueviolet;
+}
+#two{
+    background-color: rgb(250, 144, 51);
+}
+#three{
+    background-color: yellowgreen;
+}
+/* a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #f44336;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  } */
+  /* creating buttonlink */
+  /* a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  } */
