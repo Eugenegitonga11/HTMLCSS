@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        /* body{
+            background-color: white;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Notes on GET:
+    Appends the form data to the URL, in name/value pairs
+    NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+    The length of a URL is limited (2048 characters)
+    Useful for form submissions where a user wants to bookmark the result
+    GET is good for non-secure data, like query strings in Google
+
+    Notes on POST:
+    Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+    POST has no size limitations, and can be used to send large amounts of data.
+    Form submissions with POST cannot be bookmarked -->
+
+    <form action="results.html" method="GET" enctype="multipart/form-data"> <!--when using get method the information filled is going to apend things to the url of another page/POST apends to the server-->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="username " required><!--if i add the autocomplete and set to off the input wont have suggestions that the user entered before-->
+        </div><br>
+        <div>
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" id="email" placeholder="email" required>
+        </div><br>
+        <div>
+        <label for="age">Age</label>
+            <input type="number" name="age" id="age" max="150" min="10" step="2">
+        </div><br>
+        <div>
+            <label for="date">Birth Date</label>
+                <input type="date" name="date" id="date" min="2000-09-19">
+            </div><br>
+        <div>
+            Favorite Game
+            <div>
+                <input type="checkbox" name="fortnight" id="fortnight">
+            <label for="fortnight">Fortnight</label>
+            </div>
+            <div>
+                <input type="checkbox" name="apex" id="apex">
+                <label for="apex">Apex</label>
+            </div>
+        </div><br>
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male"><!--In radio we also add value so when submitting we get to know what was chosen-->
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </div>
+        <div>
+        <div>
+            Favorite language
+        </div>
+        <input type="radio" id="css" name="fav_language" value="CSS">  <!---In radio the name attribute should be the same in order to communicate-->
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        </div>
+        <div>
+            <label for="eyecolor">Eye Color</label>
+            <select name="eyecolor" id="eyecolor" ><!--you can add the (multiple) attribute to allow the user to pick more than one item -->
+            <option value="Green">Green</option>
+            <option value="Blue"label="Blue">Blue</option>
+            <option value="Red" selected>Red</option><!--the selected attribute allow to pick the first item in the drop-down list-->
+        </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password" required>
+        </div><br>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <form action="results.html" method="get">
+        <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        </fieldset>
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            </fieldset>
+            <!-- The <datalist> element specifies a list of pre-defined options for an <input> element.
+                Users will see a drop-down list of the pre-defined options as they input data. -->
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+    </form>
+</body>
+</html>
