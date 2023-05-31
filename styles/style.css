@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .clip{
     background-image: url("gtr.jpg");
@@ -15,7 +17,7 @@
 }
 .banner h2{
     font-size: 80px;
-    font-family: poppins;
+    /* font-family: poppins; */
     color: #fff;
 }
 .banner{
@@ -69,4 +71,39 @@ div.ex2 {
     h1 {
         color: white;
         text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-      }
+    }
+    .fa-instagram{
+        color: goldenrod;
+        font-size: 20px;
+    }
+    h4{
+        padding: 20px;
+        background-color: rgb(245, 60, 60);
+        /* width: 90px; */
+        display: inline-block;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    h4:hover{
+        background-color: red;
+    }
+    table,th,td{
+        margin-left: 20px;
+        border-bottom: 3px solid rgb(7, 7, 90);
+        border-collapse: collapse;
+        padding: 10px;
+    }
+    tr:nth-of-type(1){
+        background-color: rgb(75, 174, 192);
+    }
+    tr:nth-child(even){
+        background-color: burlywood;
+    }
+    td:hover{
+        cursor: pointer;
+        background-color: rgb(142, 221, 68);
+    }
+    th:hover{
+        cursor: pointer;
+        background-color: rgb(142, 221, 68);
+    }
